@@ -1,0 +1,22 @@
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
+  
+  # Reading Files
+include:
+  - _pages
+  
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+   
+
+# Markdown rendering
+#markdown: ifox
