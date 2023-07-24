@@ -379,9 +379,12 @@
         return num;
     }
     countDown();
+	
+	
     /* ---------------------------------------------
     Preloaded
     --------------------------------------------- */
+	/*
     $(window).on("load", function () {
         $('.preloader-wapper').addClass('loaded');
         if ($('.preloader-wapper').hasClass('loaded')) {
@@ -390,5 +393,5 @@
             });
         }
     });
-
+*/
 })(jQuery);
