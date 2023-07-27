@@ -104,15 +104,6 @@ FIX: VPN plugin creation errors. Added two test proxies.
 UPDATE: <a href="https://github.com/castlabs/electron-releases/releases/tag/v25.2.0%2Bwvcus">Electron v25.2.0</a> has been updated to the latest version.
 </li>
 
-<li>
-UPDATE: <a href="https://github.com/castlabs/electron-releases/releases/tag/v25.3.0%2Bwvcus">Electron v25.3.0</a> has been updated to the latest version.
-</li>
-
-<li>
-UPDATE: <a href="https://github.com/castlabs/electron-releases/releases/tag/v25.3.1%2Bwvcus">Electron v25.3.1</a> has been updated to the latest version.
-</li>
-
-
 <li style="list-style: none;"><br></li>
 
 <li id="view-style">
@@ -185,6 +176,12 @@ BUG: page load feedback button not working properly. cancel reload commands are 
 <li style="list-style: none;"><br></li>
 
 <li>
+UPDATE: <a href="https://github.com/castlabs/electron-releases/releases/tag/v25.3.0%2Bwvcus">Electron v25.3.0</a> has been updated to the latest version.
+</li>
+
+
+<li style="list-style: none;"><br></li>
+<li>
 BUG: bookmarks don't work. If bookmarks are registered in other page transitions, this problem has been resolved whether it is active or not.
 </li>
 
@@ -204,12 +201,27 @@ BUG: It would continue in a simple order while creating tabs. now when creating 
 
 <li style="list-style: none;"><br></li>
 <li>
+UPDATE: <a href="https://github.com/castlabs/electron-releases/releases/tag/v25.3.1%2Bwvcus">Electron v25.3.1</a> has been updated to the latest version.
+</li>
+
+<li style="list-style: none;"><br></li>
+<li>
 The problem of tab management mismatch in the system page module has been resolved. what's this going on? For security reasons, the system pages do not work on the main source like the normal url website. We have separated it and updated it so that there is no security vulnerability. but due to this reason, some design operational errors occurred and these problems were resolved.
 </li>
 
 <li style="list-style: none;"><br></li>
 <li>
 Some parts were not linked to the multilingual system. for macs; translations of the top shortcut tools section of the application have been added. this issue has been fixed.
+</li>
+
+<li style="list-style: none;"><br></li>
+<li>
+Turkish page names. English names are now used globally instead of Turkish and fixed page names will not be translated. example ifox://yeni-sekme -> ifox://new-tab
+</li>
+
+<li style="list-style: none;"><br></li>
+<li>
+Added new page source view protocol. the old one was pretty bad and was working via caching. There was no url separation and multi-use, only prepared. now chrome view-source:domain-name.com was rendered and cached without the old ifox://view-source domain definition.
 </li>
 
 </ul>
