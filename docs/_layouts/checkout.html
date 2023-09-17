@@ -337,14 +337,19 @@ address2.nextElementSibling.style.display = "none";
 
 if(firstName.value && brand.value && phone.value && email.value && address.value && address2.value){
 
+if(document.getElementById("pricesids") > 0){
+
+} else {
+alert("Please select a product!");
+}
 
 
 } else {
-alert("There are blank spaces, please confirm the requested information.")
+alert("There are blank spaces, please confirm the requested information.");
 }
 
 } else {
-alert("You must accept the terms and policies!")
+alert("You must accept the terms and policies!");
 }
 }
 
