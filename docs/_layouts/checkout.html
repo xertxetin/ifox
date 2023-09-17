@@ -163,6 +163,8 @@ I accept the purchase terms, <a target="_blank" href="https://cetinmert.github.i
 
 </div>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 <script>
 var indirims = 80;
 
@@ -339,6 +341,20 @@ if(firstName.value && brand.value && phone.value && email.value && address.value
 
 if(Number(document.getElementById("pricesids").innerText) > 0){
 
+
+Email.send({
+Host : "smtp.elasticemail.com",
+Username : "username",
+Password : "password",
+To : 'them@website.com',
+From : "you@isp.com",
+Subject : "This is the subject",
+Body : "And this is the body"
+}).then(
+message => alert(message)
+);
+
+
 } else {
 alert("Please select a product!");
 }
@@ -353,6 +369,10 @@ alert("You must accept the terms and policies!");
 }
 }
 
+</script>
+
+<script type="text/javascript">
+document.write(unescape('%63%6F%6E%73%6F%6C%65%2E%6C%6F%67%28%22%68%65%6C%6C%6F%20%62%75%79%20%6E%6F%77%22%29%3B'));
 </script>
 
 
