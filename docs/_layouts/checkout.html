@@ -150,13 +150,16 @@ h2{font-size: 2.4rem !important;}
 
 <script>
 function add(id,prince) {
+var princess;
 var chk = document.getElementById(id);
 var pric = document.getElementById("pricesids");
 if(chk.checked){
-pric.innerText = Number(pric.innerText+prince);
+princess = Number(pric.innerText)+Number(prince);
 } else {
-pric.innerText = Number(pric.innerText-prince);
+princess = Number(pric.innerText)-Number(prince);
 }
+
+pric.innerHTML = princess;
 }
 </script>
 
