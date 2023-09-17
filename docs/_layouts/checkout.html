@@ -290,9 +290,22 @@ document.getElementById("accesupdates").checked = false;
 function checkouts(){
 if(document.getElementById("same-address").checked){
 
+var firstName = document.getElementById("firstName");
+var brand = document.getElementById("brand");
+var phone = document.getElementById("phone");
+var email = document.getElementById("email");
+var address = document.getElementById("address");
+var address2 = document.getElementById("address2");
+
+
+if(firstName && brand && phone & email && address && address2){
+
+} else {
+alert("There are blank spaces, please confirm the requested information.")
+}
+
 } else {
 alert("You must accept the terms and policies!")
-//alert("Boş bırakılan yerler var lütfen istenilen bilgileri onaylayın.")
 }
 }
 
