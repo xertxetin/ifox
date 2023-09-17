@@ -116,6 +116,7 @@ h2{font-size: 2.4rem !important;}
 <span class="text-muted">$100</span>
 </li>
 
+<!--
 <li class="list-group-item d-flex justify-content-between lh-condensed">
 <div>
 <h6 class="my-0">Third item</h6>
@@ -123,13 +124,14 @@ h2{font-size: 2.4rem !important;}
 </div>
 <span class="text-muted">$5</span>
 </li>
+-->
 
-<li class="list-group-item d-flex justify-content-between bg-light">
+<li style="display: none;" id="rdrremmd" class="list-group-item d-flex justify-content-between bg-light">
 <div class="text-success">
 <h6 class="my-0">Promo code</h6>
-<small>LICENSEONSALE80</small>
+<small id="promekodus"></small>
 </div>
-<span id="rdrremmd" class="text-success"><strong>-$</strong><strong id="redeempricesids">0</strong></span>
+<span class="text-success"><strong>-$</strong><strong id="redeempricesids">0</strong></span>
 </li>
 
 <li class="list-group-item d-flex justify-content-between">
@@ -140,15 +142,42 @@ h2{font-size: 2.4rem !important;}
 
 <form class="card p-2">
 <div class="input-group">
-<input type="text" disabled class="form-control" placeholder="Promo code" value="LICENSEONSALE80">
+<input type="text" class="form-control" id="promecodes" placeholder="Promo code" value="">
 <div class="input-group-append">
-<button type="submit" disabled class="btn btn-secondary" style="padding: 10px 10px;">Active</button>
+<button onclick="promees()"  type="button" class="btn btn-secondary" id="apples" style="padding: 10px 10px;">Apply</button>
 </div>
 </div>
 </form>
 </div>
 
 <script>
+var activesss;
+
+function promees(){
+var apples = document.getElementById("apples");
+var promecodes = document.getElementById("promecodes");
+var pric = document.getElementById("redeempricesids");
+var rdrremmd = document.getElementById("rdrremmd");
+var promekodus = document.getElementById("promekodus");
+
+var enterpriselicens = document.getElementById("enterpriselicens");
+
+if(promecodes.value == "LICENSEONSALE80"){
+rdrremmd.display = "flex";
+promekodus.innerHTML = "LICENSEONSALE80";
+apples.disabled;
+promecodes.disabled;
+activesss = true;
+if(enterpriselicens.checked){
+var pric2 = document.getElementById("pricesids");
+var princess2 = Number(pric2.innerText)-12000;
+var princess3 = princess2+(12000 * 80) / 100;
+pric2.innerHTML = princess3;
+}
+}
+
+}
+
 function add(id,prince) {
 var princess;
 var chk = document.getElementById(id);
@@ -157,6 +186,12 @@ if(chk.checked){
 princess = Number(pric.innerText)+Number(prince);
 } else {
 princess = Number(pric.innerText)-Number(prince);
+}
+
+
+if(enterpriselicens.checked){
+var princess22 = Number(princess)-12000;
+princess = princess22+(12000 * 80) / 100;
 }
 
 pric.innerHTML = princess;
