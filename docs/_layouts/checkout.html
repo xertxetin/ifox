@@ -135,7 +135,7 @@ h2{font-size: 2.4rem !important;}
 </li>
 
 <li class="list-group-item d-flex justify-content-between">
-<span>Total (USD)</span>
+<span>Total (USDT)</span>
 <span><strong>$</strong><strong id="pricesids">0</strong></span>
 </li>
 </ul>
@@ -175,14 +175,6 @@ apples.disabled  = true;
 promecodes.disabled = true;
 activesss = true;
 
-/*
-var pric2 = document.getElementById("pricesids");
-var princess2 = Number(pric2.innerText)-12000;
-var princess3 = princess2+(12000 * 80) / 100;
-redeempricesids.innerHTML = princess3;
-if(enterpriselicens.checked){
-pric2.innerHTML = princess3-12000;
-}*/
 } else {
 activesss = false;
 alert("This Code is Not Valid. Please enter a valid campaign code!");
@@ -192,20 +184,11 @@ alert("This Code is Not Valid. Please enter a valid campaign code!");
 }
 
 function add(id,prince) {
-/*
-var princess;
-var chk = document.getElementById(id);
-var pric = document.getElementById("pricesids");
-if(chk.checked){
-princess = Number(pric.innerText)+Number(prince);
-} else {
-princess = Number(pric.innerText)-Number(prince);
-}
-*/
-
 
 var pric = document.getElementById("pricesids");
 var chk = document.getElementById(id);
+var softs = document.getElementById("ifoxproducts");
+var updates = document.getElementById("accesupdatesek");
 var redeempricesids2 = document.getElementById("redeempricesids");
 
 
@@ -220,23 +203,30 @@ sesionprince = Number(pric.innerText)-Number(prince);
 if(id == "enterpriselicens"){
 if(activesss){
 if(chk.checked){
-/*
-var princess22 = 12000-Number(sesionprince);
-var promeprince = (12000 * 80) / 100;
-princess = princess22+promeprince;
-sesionprince = princess-12000;
-var redeempricesids2 = document.getElementById("redeempricesids");
-redeempricesids2.innerHTML = princess;
-*/
 var promeprince = (12000 * 80) / 100; //9600
 var promeprincefark = 12000-promeprince; //2400
 sesionprince = promeprincefark
 redeempricesids2.innerHTML = promeprince;
-} else {/*
-var promeprince = (12000 * 80) / 100;
-sesionprince = sesionprince+promeprince;*/
+} else {
+var promeprince = (12000 * 80) / 100; //9600
+var promeprincefark = 12000-promeprince; //2400
+if(softs.checked && updates.checked){
+sesionprince = sesionprince-promeprincefark;
+} else {
+if(softs.checked){
+sesionprince = sesionprince-promeprincefark;
+} else {
+if(updates.checked){
+sesionprince = sesionprince-promeprincefark;
+} else {
 sesionprince = 0;
+}
+} 
+}
+
+
 redeempricesids2.innerHTML = 0;
+
 }
 } else {
 if(chk.checked){
@@ -257,13 +247,6 @@ sesionprince = Number(pric.innerText)-Number(prince);
 }
 
 
-/* sl
-if(document.getElementById("enterpriselicens").checked){
-if(document.getElementById("promecodes").value == "LICENSEONSALE80"){
-var princess22 = 12000-Number(princess);
-princess = princess22+(12000 * 80) / 100;
-}
-}*/
 
 pric.innerHTML = sesionprince;
 
