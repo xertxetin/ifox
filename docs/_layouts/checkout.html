@@ -153,9 +153,9 @@ function add(id,prince) {
 var chk = document.getElementById(id);
 var pric = document.getElementById("pricesids");
 if(chk.checked){
-pric.innerText = pric.innerText+prince;
+pric.innerText = Number(pric.innerText+prince);
 } else {
-pric.innerText = pric.innerText-prince;
+pric.innerText = Number(pric.innerText-prince);
 }
 }
 </script>
