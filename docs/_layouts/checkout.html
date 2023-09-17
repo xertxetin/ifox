@@ -128,7 +128,7 @@ h2{font-size: 2.4rem !important;}
 
 <li style="display: none !important;" id="rdrremmd" class="list-group-item d-flex justify-content-between bg-light">
 <div class="text-success">
-<h6 class="my-0">Promo code</h6>
+<h6 class="my-0" id="propmenames">Promo code</h6>
 <small id="promekodus"></small>
 </div>
 <span class="text-success"><strong>-$</strong><strong id="redeempricesids">0</strong></span>
@@ -163,11 +163,14 @@ var rdrremmd = document.getElementById("rdrremmd");
 var promekodus = document.getElementById("promekodus");
 var redeempricesids = document.getElementById("redeempricesids");
 var enterpriselicens = document.getElementById("enterpriselicens");
+var propmenames = document.getElementById("propmenames");
+
 
 if(!activesss){
 if(promecodes.value == "LICENSEONSALE80"){
 rdrremmd.style.display = "flex";
 promekodus.innerHTML = "Enterprise License";
+propmenames.innerHTML = "LICENSEONSALE80";
 apples.disabled  = true;
 promecodes.disabled = true;
 activesss = true;
