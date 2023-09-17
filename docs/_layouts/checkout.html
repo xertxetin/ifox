@@ -337,7 +337,7 @@ address2.nextElementSibling.style.display = "none";
 
 if(firstName.value && brand.value && phone.value && email.value && address.value && address2.value){
 
-if(document.getElementById("pricesids") > 0){
+if(Number(document.getElementById("pricesids").innerText) > 0){
 
 } else {
 alert("Please select a product!");
