@@ -160,6 +160,18 @@ princess = Number(pric.innerText)-Number(prince);
 }
 
 pric.innerHTML = princess;
+
+
+ 
+var chk2 = document.getElementById("ifoxproducts");
+if(chk2.checked){
+document.getElementById("licenssellect").checked = true;
+document.getElementById("accesupdates").checked = true;
+} else {
+document.getElementById("licenssellect").checked = false;
+document.getElementById("accesupdates").checked = false;
+}
+
 }
 </script>
 
