@@ -298,7 +298,46 @@ var address = document.getElementById("address");
 var address2 = document.getElementById("address2");
 
 
+if(!firstName.value){
+firstName.nextElementSibling.style.display = "block";
+} else {
+firstName.nextElementSibling.style.display = "none";
+}
+
+if(!brand.value){
+brand.nextElementSibling.style.display = "block";
+} else {
+brand.nextElementSibling.style.display = "none";
+}
+
+if(!phone.value){
+phone.nextElementSibling.style.display = "block";
+} else {
+phone.nextElementSibling.style.display = "none";
+}
+
+if(!email.value){
+email.nextElementSibling.style.display = "block";
+} else {
+email.nextElementSibling.style.display = "none";
+}
+
+if(!address.value){
+address.nextElementSibling.style.display = "block";
+} else {
+address.nextElementSibling.style.display = "none";
+}
+
+if(!address2.value){
+address2.nextElementSibling.style.display = "block";
+} else {
+address2.nextElementSibling.style.display = "none";
+}
+
+
 if(firstName.value && brand.value && phone.value && email.value && address.value && address2.value){
+
+
 
 } else {
 alert("There are blank spaces, please confirm the requested information.")
