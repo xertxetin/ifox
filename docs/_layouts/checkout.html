@@ -175,20 +175,13 @@ Zip code required.
 </div>
 -->
 
-<hr class="mb-4">
-<div class="custom-control custom-checkbox">
-<input type="checkbox" class="custom-control-input" id="same-address">
-<label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-</div>
-<div class="custom-control custom-checkbox">
-<input type="checkbox" class="custom-control-input" id="save-info">
-<label class="custom-control-label" for="save-info">Save this information for next time</label>
-</div>
+
 <hr class="mb-4">
 
 <h4 class="mb-3">Payment</h4>
 
 <div class="d-block my-3">
+    <!--
 <div class="custom-control custom-radio">
 <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
 <label class="custom-control-label" for="credit">Credit card</label>
@@ -201,7 +194,69 @@ Zip code required.
 <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
 <label class="custom-control-label" for="paypal">PayPal</label>
 </div>
+-->
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+    <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3">
+    <h4 class="my-0 fw-normal" style="display: flex;align-items: center;flex-wrap: nowrap;justify-content: center;font-size: 20px;">
+    <img style="width: 30px;margin-right: 5px;" src="https://www.trbinance.com/proxy/bin/image/admin_mgs_image_upload/20210122/2b5c7d80-7bcd-4cfb-8bd9-d1760a752afc.png"> 
+    <i18n>TetherUS</i18n></h4>
+    </div>
+    <div class="card-body">
+    <ul style="font-size: 14px;" class="list-unstyled mt-3 mb-4">
+    <li>Network: <b>ERC20, BEP20, Polygon</b></li>
+    <li>Only send USDT to this address.</li>
+    <li style="
+    color: blue;
+    font-weight: 600;
+    ">Sending coins or tokens other than USDT to this address will result in your deposits being lost.</li>
+    </ul>
+    <input id="walletsusdt" style="font-size:10px" type="text" value="0x3ec501d5d70098f7b4880ab0c53c9b1b70441095" class="w-100 btn btn-lg btn-outline-primary">
+    <button class="w-100 btn btn-lg btn-outline-primary" onclick="copys('walletsusdt')" style="
+    margin: 8px 0 0 0;
+    padding: 5px 0;
+    font-size: 13px;
+    background: aliceblue;    color: #009688 !important;
+    ">Click to Copy Wallet</button>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3">
+    <h4 class="my-0 fw-normal" style="display: flex;align-items: center;flex-wrap: nowrap;justify-content: center;font-size: 20px;">
+    <img style="width: 30px;margin-right: 5px;" src="https://cetinmert.github.io/ifox/img/bank-transfer.jpg"> 
+    <i18n>MATIC</i18n></h4>
+    </div>
+    <div class="card-body">
+    <ul style="font-size: 14px;" class="list-unstyled mt-3 mb-4">
+    <li>Network: <b>ERC20, BEP20, Polygon</b></li>
+    <li>Only send Matic to this address.</li>
+    <li style="
+    color: blue;
+    font-weight: 600;    font-size: 13px;
+    ">Sending coins or tokens other than MATIC to this address will result in your deposits being lost.</li>
+    </ul>
+    
+    <input id="walletpolygonmatic" style="font-size:10px" type="text" value="0x3ec501d5d70098f7b4880ab0c53c9b1b70441095" class="w-100 btn btn-lg btn-outline-primary">
+    <button class="w-100 btn btn-lg btn-outline-primary" onclick="copys('walletpolygonmatic')" style="
+    margin: 8px 0 0 0;
+    padding: 5px 0;
+    font-size: 13px;
+    background: aliceblue;    color: #009688 !important;
+    ">Click to Copy Wallet</button>
+    </div>
+    </div>
+    </div>
+    
+    
+    </div>
+
 </div>
+<!--
 <div class="row">
 <div class="col-md-6 mb-3">
 <label for="cc-name">Name on card</label>
@@ -235,7 +290,17 @@ Security code required
 </div>
 </div>
 </div>
+-->
+
 <hr class="mb-4">
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="same-address">
+<label class="custom-control-label" for="same-address">
+I accept the purchase terms, <a target="_blank" href="https://cetinmert.github.io/ifox/our-pricing-policy">price policy</a> and <a target="_blank" href="https://cetinmert.github.io/ifox/license-agreement">license policy</a> and <a target="_blank" href="https://cetinmert.github.io/ifox/privacy-policy">privacy policy</a.
+</label>
+</div>
+<hr class="mb-4">
+
 <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
 </form>
 </div>
