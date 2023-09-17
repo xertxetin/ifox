@@ -159,11 +159,13 @@ I accept the purchase terms, <a target="_blank" href="https://cetinmert.github.i
 </div>
 <hr class="mb-4">
 
-<button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+<button onclick="checkouts()" class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
 
 </div>
 
 <script>
+var indirims = 80;
+
 var sesionprince = 0;
 var activesss = false;
 
@@ -188,7 +190,7 @@ promecodes.disabled = true;
 activesss = true;
 
 if(enterpriselicens.checked){
-var promeprince = (12000 * 80) / 100; //9600
+var promeprince = (12000 * indirims) / 100; //9600
 var promeprincefark = 12000-promeprince; //2400
 sesionprince = sesionprince-12000+promeprincefark;
 redeempricesids.innerHTML = promeprince;
@@ -223,12 +225,12 @@ sesionprince = Number(pric.innerText)-Number(prince);
 if(id == "enterpriselicens"){
 if(activesss){
 if(chk.checked){
-var promeprince = (12000 * 80) / 100; //9600
+var promeprince = (12000 * indirims) / 100; //9600
 var promeprincefark = 12000-promeprince; //2400
 sesionprince = sesionprince+promeprincefark
 redeempricesids2.innerHTML = promeprince;
 } else {
-var promeprince = (12000 * 80) / 100; //9600
+var promeprince = (12000 * indirims) / 100; //9600
 var promeprincefark = 12000-promeprince; //2400
 if(softs.checked && updates.checked){
 sesionprince = sesionprince-promeprincefark;
@@ -282,6 +284,18 @@ document.getElementById("accesupdates").checked = false;
 }
 
 }
+
+
+
+function checkouts(){
+if(document.getElementById("same-address").checked){
+
+} else {
+alert("You must accept the terms and policies!")
+//alert("Boş bırakılan yerler var lütfen istenilen bilgileri onaylayın.")
+}
+}
+
 </script>
 
 
