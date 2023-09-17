@@ -165,7 +165,7 @@ var redeempricesids = document.getElementById("redeempricesids");
 var enterpriselicens = document.getElementById("enterpriselicens");
 var propmenames = document.getElementById("propmenames");
 
-
+if(promecodes.value){
 if(!activesss){
 if(promecodes.value == "LICENSEONSALE80"){
 rdrremmd.style.display = "flex";
@@ -185,6 +185,8 @@ pric2.innerHTML = princess3-12000;
 }*/
 } else {
 activesss = false;
+alert("This Code is Not Valid. Please enter a valid campaign code!");
+}
 }
 }
 }
