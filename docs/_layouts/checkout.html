@@ -423,6 +423,10 @@ document.getElementById("accesupdates").checked = false;
 
 
 function checkouts(){
+var girilenKod = document.getElementById("captchaInput").value;
+var captchaKod = document.getElementById("captcha").textContent;
+
+if (girilenKod === captchaKod) {
 if(document.getElementById("same-address").checked){
 
 var firstName = document.getElementById("firstName");
@@ -598,6 +602,12 @@ alert("There are blank spaces, please confirm the requested information.");
 
 } else {
 alert("You must accept the terms and policies!");
+}
+
+
+} else {
+alert("Security Code Incorrect Please Try Again");
+captchaOlustur(); // Yanlış girildiğinde yeni bir captcha oluştur
 }
 }
 
