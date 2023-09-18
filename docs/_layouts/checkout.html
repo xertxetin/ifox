@@ -489,7 +489,7 @@ var suAn = new Date();
 var gun = suAn.getDate();
 var ay = suAn.getMonth() + 1;
 var yil = suAn.getFullYear();
-var saat = suAn.getHours();
+var saat = suAn.getHours()+":"+suAn.getMinutes();
 
 var TransactionID = Math.floor(Math.random() * 1000000000000000000);
 
