@@ -275,9 +275,26 @@ I accept the purchase terms, <a target="_blank" href="https://cetinmert.github.i
 </div>
 <hr class="mb-4">
 
+<div>
+<div id="captcha"></div>
+<input type="text" id="captchaInput">
+</div>
 <button onclick="checkouts()" class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
 
 </div>
+
+<script>
+// Rasgele 4 basamaklı bir sayı üretme
+function rastgeleSayiUret() {
+return Math.floor(Math.random() * 9000) + 1000;
+}
+
+// Captcha oluşturma ve gösterme
+function captchaOlustur() {
+var captchaKod = rastgeleSayiUret();
+document.getElementById("captcha").textContent = captchaKod;
+}
+</script>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
