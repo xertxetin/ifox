@@ -213,7 +213,8 @@ py -m castlabs_evs.account signup
 <br><br>
 
 <b># Signing an ECS application package</b> <br>
-py -m castlabs_evs.vmp sign-pkg node_modules\electron\dist
+py -m castlabs_evs.vmp sign-pkg node_modules\electron\dist<br>
+<b>The signing method works only in npm start, i.e., in test mode. Follow the guide below for packaging.</b>
 
 <br><br>
 <a href="https://github.com/castlabs/electron-releases/wiki/EVS" target="_blank">https://github.com/castlabs/electron-releases/wiki/EVS</a>
@@ -231,7 +232,6 @@ Navigate to the project folder and open the terminal (Console, CMD).<br>
 - To ensure that signing is effective across all platforms (.setup, .appx, .exe), we need to repackage. <br>
 - Rebuild: <b>npm run build-win</b><br>
 - That's it. To test, open Netflix, Hulu, Prime, Spotify, or any other application and check if it is working correctly.
-
 
 <img src="img/102update/evs.gif" style="width: 100%;max-width: 950px;padding-top: 20px;">
 </p>
