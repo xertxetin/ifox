@@ -223,8 +223,9 @@ py -m castlabs_evs.vmp sign-pkg node_modules\electron\dist
 
 <h3>EVS.JS Making Easy Signing</h3>
 <p>It is prepared for easy signing with evs.js. Put evs.js in the project directory and run it; node evs <br>
-It signs using the same name as package.json name. Repeat signing for any name changes you make.
-<img src="img/102update/evs.gif" style="width: 100%;max-width: 600px;padding-top: 20px;">
+It signs using the same name as package.json name. Repeat signing for any name changes you make.<br>
+It saves you from this burden during packaging by signing the root array electron ('node_modules/electron/dist').<br>
+<img src="img/102update/evs.gif" style="width: 100%;max-width: 950px;padding-top: 20px;">
 </p>
 </li>
 
