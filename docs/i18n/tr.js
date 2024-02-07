@@ -359,7 +359,7 @@ var lg_lang =  {
 "IFOX'yı karanlık ve aydınlık temalar, klavye kısayolları, duvar kağıtları, uzantılar, en sevdiğiniz yer imleri ve başka birçok seçenekle özelleştirin.": "IFOX'yı karanlık ve aydınlık temalar, klavye kısayolları, duvar kağıtları, uzantılar, en sevdiğiniz yer imleri ve başka birçok seçenekle özelleştirin.",
 "Daha güvenli bir tarayıcıyı hak ediyorsunuz.": "Daha güvenli bir tarayıcıyı hak ediyorsunuz.",
 "IFOX sayesinde verileriniz (çerezleriniz ve gezinmeleriniz) güvende.<br> Verilerinizi toplamıyoruz, kimseyle paylaşmıyoruz ve satmıyoruz.<br> Dilediğin zaman ön bellek temizle yada hiç iz bırakma ayarlar sana kalmış :)": "IFOX sayesinde verileriniz (çerezleriniz ve gezinmeleriniz) güvende.<br> Verilerinizi toplamıyoruz, kimseyle paylaşmıyoruz ve satmıyoruz.<br> Dilediğin zaman ön bellek temizle yada hiç iz bırakma ayarlar sana kalmış :)",
-"Desktop application created with IFOX Electron;<br>Build cross-platform desktop apps with JavaScript, HTML, and CSS": "IFOX React, Electron ile oluşturulmuş masaüstü uygulaması;<br>React, Electron ile platformlar arası masaüstü uygulamaları oluşturun",
+"Desktop application created with IFOX Electron;<br>Build cross-platform desktop apps with JavaScript, HTML, and CSS": "IFOX, Electron ile oluşturulmuş masaüstü uygulaması;<br>Electron ile platformlar arası masaüstü uygulamaları oluşturun",
 "Company": "Kurumsal",
 "Features": "Hizmetler",
 "Adress": "Adres",
