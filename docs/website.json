@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0024)http://localhost/website -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>{ "articles":[{
+{ "articles":[{
 "title":"ADS",
 "url":"#",
 "urlToImage":"http://localhost/public/uploads/slider-24.png"
@@ -25,4 +23,4 @@
 "url":"#",
 "urlToImage":"http://localhost/public/uploads/slider-29.jpg"
 }
-] }</body></html>
+] }

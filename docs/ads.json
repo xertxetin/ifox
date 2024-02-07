@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0020)http://localhost/ads -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>{ "articles":[{
+{ "articles":[{
 "title":"ADS",
 "description":"Advertise Here",
 "author":"IFOX BROWSER",
@@ -21,4 +19,4 @@
 "url":"#",
 "urlToImage":"http://localhost/public/uploads/slider-32.jpg"
 }
-] }</body></html>
+] }
