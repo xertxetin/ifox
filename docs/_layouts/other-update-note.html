@@ -187,6 +187,27 @@ ADD: As Machine Translation; Portuguese, Arabic Language Added. Including templa
 ADD: Portable application version included.
 </li>
 
+<li>
+Since content protection (widevine / DRM) and licensing are very difficult, castlabs has brought a new solution to this situation with the EVS signature method.<br>
+Sites that require content protection licenses such as Netflix, Hulu, Prime, Spotify now work smoothly.
+<br><br>
+
+<b># The EVS client is published as a Python 3.7+ module, castlabs-evs, and can be installed/upgraded from PyPi with:</b> <br>
+py -m pip install --upgrade castlabs-evs
+
+<br><br>
+
+<b># To create an EVS account you would execute something like this:</b> <br>
+py -m castlabs_evs.account signup
+
+<br><br>
+
+<b># Signing an ECS application package</b> <br>
+py -m castlabs_evs.vmp sign-pkg node_modules\electron\dist
+
+<br><br>
+<a href="https://github.com/castlabs/electron-releases/wiki/EVS" target="_blank">https://github.com/castlabs/electron-releases/wiki/EVS</a>
+</li>
 
 </ul>
 
