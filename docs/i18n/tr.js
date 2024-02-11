@@ -269,7 +269,7 @@ var lg_lang =  {
 "Bu ayarı değiştirmek uygulamayı yeniden başlatır.": "Bu ayarı değiştirmek uygulamayı yeniden başlatır.",
 "Turkish": "Türkçe",
 "English": "İngilizce",
-"Bir Kuş Kadar Hafif": "Bir Kuş Kadar Hafif",
+"Bir Kuş Kadar Hafif": "Hızlı Ve Hafif Bir Tarayıcı",
 "CPU, RAM rahat kalsın diye ifox'yı geliştirdik. Kişisel kullanım, internette sörf yapanlar, Dizi-film-belgesel izleyenler veya Oyuncular için tarayıcı.": "CPU, RAM rahat kalsın diye ifox'yı geliştirdik. Kişisel kullanım, internette sörf yapanlar, Dizi-film-belgesel izleyenler veya Oyuncular için tarayıcı.",
 "Şimdi indir - Ücretsiz": "Şimdi indir - Ücretsiz",
 "Sol Kenar Çubuğu": "Sol Kenar Çubuğu",

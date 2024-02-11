@@ -269,7 +269,7 @@ var lg_lang = {
 "Bu ayarı değiştirmek uygulamayı yeniden başlatır.": "Changing this setting restarts the application.",
 "Turkish": "Turkish",
 "English": "English",
-"Bir Kuş Kadar Hafif": "WEB3 Browser",
+"Bir Kuş Kadar Hafif": "A Fast and Light Browser",
 "CPU, RAM rahat kalsın diye ifox'yı geliştirdik. Kişisel kullanım, internette sörf yapanlar, Dizi-film-belgesel izleyenler veya Oyuncular için tarayıcı.": "We developed ifox to keep CPU and RAM comfortable. Browser for personal use, internet surfing, TV series-movie-documentary watchers or Gamers.",
 "Şimdi indir - Ücretsiz": "Download now - Free",
 "Bu ayarı değiştirmek uygulamayı yeniden başlatır.": "Changing this setting restarts the application.",
