@@ -375,5 +375,10 @@ var lg_lang =  {
 "Updates Notes": "Güncelleme Notları",
 "Buy Now Codecanyon": "Desteklemek",
 "Buy License": "Lisans Göz At",
-"IFOX Corporate Commercial license 83% Discount Code:": "IFOX Kurumsal Ticari lisans %83 İndirim Kodu:" 
+"IFOX Corporate Commercial license 83% Discount Code:": "IFOX Kurumsal Ticari lisans %83 İndirim Kodu:",
+"Project Manager:": "Proje Yönetici:",
+"Brand Logo": "Marka logosu",
+"Our Pricing Policy": "Fiyatlandırma Politikamız",
+"Education Normal License": "Eğitim Normal Lisansı",
+"Enterprise Commercial License": "Kurumsal Ticari Lisans"
 };

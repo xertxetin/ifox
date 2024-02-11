@@ -376,5 +376,10 @@ var lg_lang = {
 "Updates Notes": "Updates Notes",
 "Buy Now Codecanyon": "Desteklemek",
 "Buy License": "Buy License",
-"IFOX Corporate Commercial license 83% Discount Code:": "IFOX Corporate Commercial license 83% Discount Code:"
+"IFOX Corporate Commercial license 83% Discount Code:": "IFOX Corporate Commercial license 83% Discount Code:",
+"Project Manager:": "Project Manager:",
+"Brand Logo": "Brand Logo",
+"Our Pricing Policy": "Our Pricing Policy",
+"Education Normal License": "Education Normal License",
+"Enterprise Commercial License": "Enterprise Commercial License"
 };
