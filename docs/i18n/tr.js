@@ -371,5 +371,9 @@ var lg_lang =  {
 "Özellikler": "Özellikler",
 "Other Update Note": "Diğer Güncelleme Notları",
 "Buy Now - Donation": "Şimdi Satın Al - Bağış",
-"Buy Now With Crypto": "Destek Olmak İçin Bağış Yapın"
+"Buy Now With Crypto": "Destek Olmak İçin Bağış Yapın",
+"Updates Notes": "Güncelleme Notları",
+"Buy Now Codecanyon": "Desteklemek",
+"Buy License": "Lisans Göz At",
+"IFOX Corporate Commercial license 83% Discount Code:": "IFOX Kurumsal Ticari lisans %83 İndirim Kodu:" 
 };

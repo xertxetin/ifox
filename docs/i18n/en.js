@@ -372,5 +372,9 @@ var lg_lang = {
 "Özellikler": "Features",
 "Other Update Note": "Other Update Note",
 "Buy Now - Donation": "Buy Now - Donation",
-"Buy Now With Crypto": "Donate To Support"
+"Buy Now With Crypto": "Donate To Support",
+"Updates Notes": "Updates Notes",
+"Buy Now Codecanyon": "Desteklemek",
+"Buy License": "Buy License",
+"IFOX Corporate Commercial license 83% Discount Code:": "IFOX Corporate Commercial license 83% Discount Code:"
 };
