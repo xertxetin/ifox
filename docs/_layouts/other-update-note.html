@@ -327,6 +327,34 @@ Many new systems such as administration panel, website, plug-in store have been 
 <img src="img/102update/website.gif" style="width: 100%;margin-top: 15px;max-width: 950px;">
 </li>
 
+<li>
+<p> UPDATE: Window and full color adjustments have been corrected.<br>Automatic background color adjustment according to the website's own color and Default color has now been added.</p>
+<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 900px; ">
+<code style="color: white;">
+#web.js<br>
+async function getColorFromPage(webContents) {<br>
+try {<br>
+// Sayfa içeriğinden HTML veya body rengini alabilirsiniz.<br>
+let backgroundColor = await webContents.executeJavaScript(`<br>
+window.getComputedStyle(document.body).backgroundColor;<br>
+`);<br>
+if(backgroundColor == "rgba(0, 0, 0, 0)") { backgroundColor = "rgb(255, 255, 255)"; }<br>
+return backgroundColor;<br>
+} catch (error) {<br>
+throw error;<br>
+}<br>
+}<br>
+<br>
+exports.domReady = async function (view, storage) {<br>
+// Sayfa yüklendiğinde HTML veya body rengini al<br>
+const backgroundColor = await getColorFromPage(view.webContents);<br>
+// Ardından, BrowserView'ın arka plan rengini ayarla<br>
+view.setBackgroundColor(backgroundColor);<br>
+}
+</code>
+</div>
+</li>
+
 </ul>
 
 <br>
