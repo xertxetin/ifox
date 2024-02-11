@@ -374,7 +374,7 @@ var lg_lang = {
 "Buy Now - Donation": "Buy Now - Donation",
 "Buy Now With Crypto": "Donate To Support",
 "Updates Notes": "Updates Notes",
-"Buy Now Codecanyon": "Desteklemek",
+"Buy Now Codecanyon": "Buy Now Codecanyon",
 "Buy License": "Buy License",
 "IFOX Corporate Commercial license 83% Discount Code:": "IFOX Corporate Commercial license 83% Discount Code:",
 "Project Manager:": "Project Manager:",
