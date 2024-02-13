@@ -232,6 +232,15 @@ py -m castlabs_evs.vmp sign-pkg node_modules\electron\dist<br>
 
 <h3 style=" padding-top: 15px; ">Code Signing for Windows</h3>
 <p>
+<code>
+<b># The EVS client is published as a Python 3.7+ module, castlabs-evs, and can be installed/upgraded from PyPi with:</b> <br>
+py -m pip install --upgrade castlabs-evs <br>
+<b>Make sure you have Python installed on your computer and install this module.</b>
+<br><br>
+<b># To create an EVS account you would execute something like this:</b> <br>
+py -m castlabs_evs.account signup <br>
+<b>You must be registered with EVS to sign. Please enter the information correctly and completely.</b>
+</code>
 Navigate to the project folder and open the terminal (Console, CMD).<br>
 - First, build the project: <b>npm run build-win</b> <br>
 - Next, run the following command to sign the package: <b>py -m castlabs_evs.vmp sign-pkg dist/win-unpacked</b> <br>
