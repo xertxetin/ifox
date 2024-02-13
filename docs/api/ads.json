@@ -3,20 +3,20 @@
 "description":"Advertise Here",
 "author":"IFOX BROWSER",
 "url":"#",
-"urlToImage":"http://localhost/public/uploads/slider-30.png"
+"urlToImage":"https://cetinmert.github.io/ifox/api/img/slider-30.png"
 },
 {
 "title":"Telegram Community",
 "description":"Stay in touch. Join Our Telegram Community",
 "author":"",
 "url":"https://t.me/hollacommunity",
-"urlToImage":"http://localhost/public/uploads/slider-31.jpg"
+"urlToImage":"https://cetinmert.github.io/ifox/api/img/slider-31.jpg"
 },
 {
 "title":"ADS",
 "description":"Do You Want To Advertise?",
 "author":"IFOX BROWSER",
 "url":"#",
-"urlToImage":"http://localhost/public/uploads/slider-32.jpg"
+"urlToImage":"https://cetinmert.github.io/ifox/api/img/slider-32.jpg"
 }
 ] }
