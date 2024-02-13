@@ -46,11 +46,14 @@ padding-left: 0;
 
 .newupdatentpes img {
 width: 100%;
+min-width: 800px;
+min-height: 400px;
+background: #f3f3f3;
 }
 
 .madien li {
-  margin-bottom: 25px;
-  margin-top: 25px;
+margin-bottom: 25px;
+margin-top: 25px;
 }
 </style>
 
@@ -231,7 +234,7 @@ py -m castlabs_evs.vmp sign-pkg node_modules\electron\dist<br>
 <img loading="lazy"src="img/102update/spotify.png" style="width: 100%;max-width: 548px;padding-top: 20px;">
 
 <h3 style=" padding-top: 15px; ">Code Signing for Windows</h3>
-<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 900px; ">
+<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 950px; ">
 <code style="color: white;">
 <b># The EVS client is published as a Python 3.7+ module, castlabs-evs, and can be installed/upgraded from PyPi with:</b> <br>
 py -m pip install --upgrade castlabs-evs <br>
@@ -254,7 +257,7 @@ Navigate to the project folder and open the terminal (Console, CMD).<br>
 
 <br>
 
-<video preload="metadata"width="500" height="300" id="player" controls="" style=" margin-top: 20px; width: 100%; max-width: 900px; height: 500px;  background: black; ">
+<video preload="metadata"width="500" height="300" id="player" controls="" style=" margin-top: 20px; width: 100%; max-width: 950px; height: 500px;  background: black; ">
 <source src="img/102update/sig-wins.mp4" type="video/mp4">
 </video>
 </p>
@@ -309,14 +312,14 @@ REMOVE: Google Chrome Store Extension Support.
 You can create your own tokens with the reward and wallet system and distribute them with the reward system. <br>
 Remember that it is superficial and will be hosted on your server as a central system.
 </p>
-<video preload="metadata"width="500" height="300" id="player" controls="" style=" margin-top: 20px; width: 100%; max-width: 900px; height: 500px; background: black; ">
+<video preload="metadata"width="500" height="300" id="player" controls="" style=" margin-top: 20px; width: 100%; max-width: 950px; height: 500px; background: black; ">
 <source src="img/102update/ifox_wallet.mp4" type="video/mp4">
 </video>
 </li>
 
 <li>
 <p>UPDATE: <a href="https://github.com/castlabs/electron-releases/releases/tag/v28.2.2%2Bwvcus">Electron v28.2.2</a> has been updated to the latest version.</p>
-<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 900px; ">
+<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 950px; ">
 <code style="color: white;">
 D:\c\proje\electron\ifox-browser>npm install "https://github.com/castlabs/electron-releases#v28.2.2+wvcus" --save-dev <br>
 npm ERR! code EBUSY<br>
@@ -343,7 +346,7 @@ Many new systems such as administration panel, website, plug-in store have been 
 
 <li>
 <p> UPDATE: Window and full color adjustments have been corrected.<br>Automatic background color adjustment according to the website's own color and Default color has now been added.</p>
-<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 900px; ">
+<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 950px; ">
 <code style="color: white;">
 #web.js<br>
 async function getColorFromPage(webContents) {<br>
@@ -375,8 +378,7 @@ UPDATE: Password reset and locking have been added to the Wallet System, and a f
 
 <li>
 <p>UPDATE: Updated window maximize and minimize function and listening event for Linux. <br> Fixed making the window full screen and retracting it in Linux.</p>
-<img loading="lazy"src="img/102update/linux-maximize.gif" style="width: 100%;margin-top: 15px;max-width: 950px;">
-<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 900px; ">
+<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 950px; ">
 <code style="color: white;">
 // İşletim sistemini kontrol et <br>
 if (os.platform() === 'linux') {<br>
@@ -396,6 +398,7 @@ window.on('leave-full-screen', () => { toggleMaxRestoreButtons(); });
 }
 </code>
 </div>
+<img loading="lazy"src="img/102update/linux-maximize.gif" style="width: 100%;margin-top: 15px;max-width: 950px;">
 </li>
 
 
