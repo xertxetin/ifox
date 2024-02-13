@@ -5,7 +5,11 @@
 <meta name="description" content="What are the changes and updates made in the latest version of IFOX?">
 {% include head.html %}
 </head>
-
+<script>
+setTimeout(() => {
+document.getElementById("textloaders").innerHTML = "<code># Due to the amount of multimedia, videos and images may take a long time to load! Please Be Patient.</code>";
+}, 150);
+</script>
 <style>
 pre {
 background: whitesmoke;
@@ -105,7 +109,6 @@ v0.9.8 / See Update Note
 <hr id="OtherUpdateNote" style="margin: 60px 0;">
 
 <h3>To be added in the next update; <b>v1.0.2</b></h3>
-<code># Due to the amount of multimedia, videos and images may take a long time to load! Please Be Patient.</code>
 
 <ul class="madien">
 <li>Override scans when CloudFlare attack mode is active. CloudFlare does not recognize the browser. BUG: requestHeaders does not define userAgent, this issue has been fixed.</li>
