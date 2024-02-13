@@ -373,7 +373,30 @@ view.setBackgroundColor(backgroundColor);<br>
 UPDATE: Password reset and locking have been added to the Wallet System, and a few bugs have been fixed.
 </li>
 
-
+<li>
+<p>UPDATE: Updated window maximize and minimize function and listening event for Linux. <br> Fixed making the window full screen and retracting it in Linux.</p>
+<img src="img/102update/linux-maximize.gif" style="width: 100%;margin-top: 15px;max-width: 950px;">
+<div style="background-color: black; padding: 10px 10px;  width: 100%; max-width: 900px; ">
+<code style="color: white;">
+// İşletim sistemini kontrol et <br>
+if (os.platform() === 'linux') {<br>
+// Eğer Linux ise, tam ekran modunu aç <br>
+window.setFullScreen(true);<br>
+} else { window.maximize(); }
+<br> <br>
+if (os.platform() === 'linux') { <br>
+// Tam ekran modunu dinle <br>
+window.on('enter-full-screen', () => { toggleMaxRestoreButtons(); <br>
+});
+<br><br>
+window.on('leave-full-screen', () => { toggleMaxRestoreButtons(); });
+<br>
+} else { window.on('maximize', toggleMaxRestoreButtons); window.on('unmaximize', toggleMaxRestoreButtons);
+<br>
+}
+</code>
+</div>
+</li>
 
 
 </ul>
